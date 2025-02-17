@@ -33,6 +33,7 @@ nav ul li a {
     color: #132333;
     text-decoration: none;
     font-size: 16px;
+    font-weight: 700;
 }
 
 
@@ -78,9 +79,10 @@ footer {
 
 .menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     height: 46px;
+    align-items: center;
 }
 
 .menu-icons {
@@ -91,5 +93,5 @@ footer {
     width: 24px;
     height: 24px;
     cursor: pointer;
-    gap: 10px; /* Adjust the gap between icon-button as needed */
+    gap: 50px; /* Adjust the gap between icon-button as needed, doesnt work */
 }
