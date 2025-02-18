@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #132333;
 }
 
 
@@ -13,9 +14,9 @@ header {
     justify-content: center;  /* center-vertical */
     align-items: center;      /* center-horizontal */
     background-color: #f4f4f4;
-    color: white;
     padding-top: 20px;
     padding-bottom: 20px;
+    color: #132333;
 }
 
 
