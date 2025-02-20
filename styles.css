@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #FFF;
     color: #132333;
 }
 
@@ -13,7 +13,7 @@ header {
     flex-direction: column;
     justify-content: center;  /* center-vertical */
     align-items: center;      /* center-horizontal */
-    background-color: #f4f4f4;
+    background-color: #FFF;
     padding-top: 20px;
     padding-bottom: 20px;
     color: #132333;
