@@ -33,9 +33,16 @@
     object-fit: cover;
 } */
 
+.banner {
+    aspect-ratio: 1.33333;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-.swiper-slide {
-    display: grid !important;
+
+.my-swiper-slide {
+    display: grid;
     grid-template-areas:
         "banner title"
         "banner description";
@@ -47,23 +54,29 @@
 
 }
 
-.swiper-slide > .banner {
+.my-swiper-slide > .banner-container {
     background-color: #FFF;
     grid-area: banner;
     justify-self: center;
     border-radius: 20px;
+    margin-left: 80px;
+    margin-right: 56px;
+    overflow: hidden; 
+    border-color: black;
 }
 
-.swiper-slide > .title {
+.my-swiper-slide > .title {
     grid-area: title;
     background-color: #FFF;
     font-size: 40px;
+    margin-right: 80px;
     font-weight: bold;
     align-self: end;
 }
 
-.swiper-slide > .description {
+.my-swiper-slide > .description {
     grid-area: description;
     background-color: #FFF;
     font-size: 18px;
+    margin-right: 80px;
 }
