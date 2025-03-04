@@ -43,19 +43,21 @@ h1.heading {
         background-color: #FFF;
         display: inline-block;
         z-index: 1;
-        padding-right: 10px;
+        padding-right: 25px;
     }
 }
 
 h1.heading:before {
     content: "";
-    background-color: var(--Accent-Color-Gold);
     display: block;
     position: relative;
-    top: 23px;
+    top: 26px;
     width: 100%;
-    height: 6px;
+    height: 5px;
     z-index: -1;
+
+    border-top: 3px solid var(--Accent-Color-Gold);
+    border-bottom: 1px solid var(--Accent-Color-Gold);
 }
 
 
@@ -86,10 +88,10 @@ section {
 }
 
 
-img {
+/* img {
     max-width: 100%;
     height: auto;
-}
+} */
 
 
 button {
@@ -130,4 +132,15 @@ footer {
     cursor: pointer;
     gap: 50px;
     /* Adjust the gap between icon-button as needed, doesnt work */
+}
+
+.shop-container {
+    float: left;
+    width: 25%;
+  }
+
+.logo-site {
+    height: 16px;
+    width: auto;
+    margin-right: 18px;
 }
