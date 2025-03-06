@@ -1,6 +1,8 @@
 :root {
     --Accent-Color-Gold: #DCB567;
     --Mono-Color-Black: #132333;
+    --Mono-Color-Gray: #718899;
+    --Mono-Color-Light-Gray: #D8E1EB;
     --pink: #dc67a3;
 }
 
@@ -134,13 +136,84 @@ footer {
     /* Adjust the gap between icon-button as needed, doesnt work */
 }
 
+.shops {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 24px;
+}
+
 .shop-container {
-    float: left;
-    width: 25%;
-  }
+    flex: 1;
+}
+
+.shop-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 40px;
+    border: 1px solid var(--Mono-Color-Light-Gray);
+}
 
 .logo-site {
     height: 16px;
     width: auto;
     margin-right: 18px;
+    margin-top: 12px;
+}
+
+.shop-name {
+    color: #132333;
+    /* PC/body_strong_m */
+    font-family: "Noto Sans JP";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 175%;
+    margin: 4px 0px;
+}
+
+.shop-campaign {
+    color: var(--Mono-Color-Gray);
+    text-align: left;
+    font-family: "Noto Sans JP";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    margin: 4px 0px;
+}
+
+.single-line {
+    white-space: nowrap;
+    /* Không cho văn bản xuống dòng */
+    overflow: hidden;
+    /* Ẩn phần văn bản bị tràn ra ngoài */
+    text-overflow: ellipsis;
+    /* Hiển thị dấu '...' khi không đủ không gian */
+}
+
+.btn {
+    display: inline-block;
+}
+
+.show-more {
+    color: var(--Mono-Color-Black, #132333);
+    text-align: center;
+    /* button_m */
+    font-family: "Noto Sans JP";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+
+    padding: 12px 44px;
+    border-radius: 32px;
+    border: 1px solid var(--Mono-Color-Soft-Gray, #ABBCCC);
+    background: var(--Mono-Color-White, #FFF);
+    margin-top: 40px;
+
+    /* margin: 0 auto; */
+
+    text-decoration: none; /*remove underline*/
 }
