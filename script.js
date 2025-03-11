@@ -1,4 +1,4 @@
-// import { shop1, shop2, shop3, shop4 } from "./shop-data";
+// import { shop1, shop2, shop3, shop4 } from "./shop-data.js";
 // const shops = [shop1, shop2, shop3, shop4];
 
 
@@ -41,21 +41,21 @@ function hideAllSlides() {
 
 
 
-// const shopsContainer = document.querySelector('.shops');  // Chọn phần tử chứa các cửa hàng
+// const shopsContainer = document.querySelector('.shops');  
 
 // shops.forEach(shop => {
   
 //   const shopContainer = document.createElement('div');
 //   shopContainer.classList.add('shop-container');
   
-//   // Thêm ảnh cửa hàng
+//   // Shop image
 //   const shopImg = document.createElement('img');
 //   shopImg.classList.add('shop-img');
 //   // shopImg.src = shop.imgSrc;
 //   shopImg.src = "assets/shops-images/Anker.jpg";
 //   shopContainer.appendChild(shopImg);
   
-//   // Thêm logo của cửa hàng
+//   // Logo
 //   shop.logos.forEach(logo => {
 //     const logoImg = document.createElement('img');
 //     logoImg.classList.add('logo-site');
@@ -64,19 +64,19 @@ function hideAllSlides() {
 //     shopContainer.appendChild(logoImg);
 //   });
 
-//   // Thêm tên cửa hàng
+//   // Name
 //   const shopName = document.createElement('p');
 //   shopName.classList.add('shop-name', 'single-line');
 //   shopName.textContent = shop.name;
 //   shopContainer.appendChild(shopName);
   
-//   // Thêm chiến dịch của cửa hàng
+//   // Promotion
 //   const shopCampaign = document.createElement('p');
 //   shopCampaign.classList.add('shop-campaign');
 //   // shopCampaign.textContent = shop.campaign;
 //   shopCampaign.textContent = "キャンペーン中";
 //   shopContainer.appendChild(shopCampaign);
   
-//   // Thêm shopContainer vào phần tử chứa
+  
 //   shopsContainer.appendChild(shopContainer);
 // });
