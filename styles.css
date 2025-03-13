@@ -218,6 +218,7 @@ footer {
     grid-area: img;
     object-fit: cover;
     flex: 0 0 50%;
+    width: 200px;
 }
 
 .ariticle-bot > .title {
