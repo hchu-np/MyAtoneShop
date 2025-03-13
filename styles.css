@@ -136,11 +136,65 @@ footer {
     /* Adjust the gap between icon-button as needed, doesnt work */
 }
 
-.shops, .ariticles {
+.shops {
     display: flex;
     /* flex-wrap: wrap; */
     gap: 24px;
     height: auto;
+}
+
+.ariticles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.ariticles .top-section {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+}
+
+.ariticles .title {
+    color: var(--Mono-Color-Black, #132333);
+    /* PC/card_title_l */
+    font-family: "Noto Sans JP";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+
+}
+
+.ariticles .short-desc {
+    color: var(--Mono-Color-Black, #132333);
+    /* PC/body_s */
+    font-family: "Noto Sans JP";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175%;
+}
+
+.ariticles .meta-data {
+    color: var(--Mono-Color-Gray, #718899);
+
+    /* PC/category */
+    font-family: "Noto Sans JP";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.ariticles .bot-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.bot-section .shop-container {
+    width: 50%;
 }
 
 .shop-container {
@@ -151,7 +205,30 @@ footer {
     flex-grow: 1;
 }
 
-.shop-img {
+.ariticle-bot {
+    display: grid;
+    grid-template-areas:
+    "img title"
+    "img meta-data";
+    width: 50%;
+    
+}
+
+.ariticle-bot > img {
+    grid-area: img;
+    object-fit: cover;
+    flex: 0 0 50%;
+}
+
+.ariticle-bot > .title {
+    grid-area: title;
+}
+
+.ariticle-bot > .meta-data {
+    grid-area: meta-data;
+}
+
+.shop-img, .ariticle-container img {
     object-fit: cover;
     width: 100%;
     height: 200px;
@@ -199,9 +276,9 @@ footer {
 }
 
 .btn {
-    display: block; 
+    display: block;
     width: fit-content;
-    margin: 40px auto 0; 
+    margin: 40px auto 0;
 }
 
 .show-more {
@@ -222,5 +299,6 @@ footer {
 
     /* margin: 0 auto; */
 
-    text-decoration: none; /*remove underline*/
+    text-decoration: none;
+    /*remove underline*/
 }
